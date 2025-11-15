@@ -1,0 +1,16 @@
+.central{
+    justify-content: center;
+    display: flex;
+}
+
+.central2{
+    justify-content: center;
+    display: flex;
+
+}
+
+#canvas{
+    background-color: #9CFCD4;
+}
+
+

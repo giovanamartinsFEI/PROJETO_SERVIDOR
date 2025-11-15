@@ -1,0 +1,132 @@
+
+*{
+  margin:0;
+  padding: 0;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover{
+  opacity: 0.7 ;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #23232e;
+  height: 20vh;
+  border-left: solid black 2px;
+  
+}
+
+main {
+  background: url("bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 92vh;
+}
+
+.nav-list{
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li{
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+h1{
+  text-align: center;
+  justify-content: center;
+  font-size: 100px;
+  color: aquamarine;
+  text-shadow: 4px 4px 5px #ff00f2;
+   
+}
+
+h3{
+   text-align: center;
+  justify-content: center;
+}
+
+.guess{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  box-shadow: 0px 0px 200px #ff00f2,
+        10px 10px 200px  #ff00f2 inset;
+  border: 20px solid  #ff00f2;
+  border-radius: 130%;
+  margin: 50px;
+  box-sizing: border-box;
+
+}
+
+.guess:hover{
+ transition: 1s ease;
+  transform: scale(1.2);
+
+}
+body{
+  background-color: #23232e;
+}
+
+.text{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.centralizarguess{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+}
+
+.digite{
+  justify-content: center;
+  display: flex;
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+}
+
+.digite2{
+  justify-content: center;
+  display: flex;
+}
+
+.botao{
+  justify-content: center;
+  display: flex;
+}
+
+.rescentral{
+  justify-content: center;
+  display: flex;
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+}
+
+.voltar{
+  justify-content: center;
+  display: flex;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+}

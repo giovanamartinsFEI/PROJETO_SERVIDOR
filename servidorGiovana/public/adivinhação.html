@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="adivinhação.css" rel="stylesheet">
+</head>
+<body>
+   <header>
+        <nav>
+            <img class="logo" src="IMAGENS/jojolandialogo.png" height="250px">
+            <ul class="nav-list">
+                <li><a href="./Menu.html">Inicio</a></li>
+                <li><a href="./Sobrejojo.html">Sobre Mim</a></li>
+                <li><a href="./Project.Html">Meus Projetos</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="centralizarguess">
+    <img class="guess" src="./IMAGENS/guessgame.png" alt="guess" >
+    </div>
+    <br>
+    <br>
+    <br>
+    <br> 
+
+    <h1>Ola visitante!<br>que tal um desafio?</h1>
+    <br>
+    <br>
+    <h3>Adivinhe o numero de 0 a 15!.</h3>
+    <br>
+    <br>
+    <br>
+    <br> 
+    
+        <div class="Num">
+            <div class="digite">
+            <label class="fonte" for="input" class="text">Número:</label>
+            </div>
+            <br>
+            
+            <div class="digite2">
+            <input class="fonte" type="text" id="input" placeholder="Digite um número" class="input">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="botao">
+            <button onclick="verificar()">Adivinhar</button>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="rescentral">
+        <div id="resultado"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="voltar">
+        <p><a class="link-projetos" href="./Project.Html" target="_blank">voltar</a></p>
+    </div>
+
+    <script>
+        const numero = Math.floor(Math.random() * 15);
+        console.log("Número sorteado:", numero);
+
+        function verificar() {
+            const valor = document.getElementById("input").value;
+            const resultado = document.getElementById("resultado");
+
+            if (valor === "") {
+                alert("Digite um número!");
+                return;
+            }
+
+            const numeroUsuario = parseInt(valor);
+            let mensagem = "";
+            let icone = "";
+
+            if (numeroUsuario === numero) {
+                mensagem = "Parabéns! Você acertou!";
+                icone = "<span id='icone' style='color: green;'>✔️</span>";
+            } else if (numeroUsuario > numero) {
+                mensagem = "Tente um número menor!";
+                icone = "<span id='icone' style='color: red;'>❌</span>";
+            } else {
+                mensagem = "Tente um número maior!";
+                icone = "<span id='icone' style='color: red;'>❌</span>";
+            }
+
+            resultado.innerHTML = mensagem + icone;
+        }
+    </script>
+</body>
+</html>

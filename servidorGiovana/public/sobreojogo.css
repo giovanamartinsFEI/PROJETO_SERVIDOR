@@ -1,0 +1,95 @@
+table {
+  margin: 0 auto;
+  border: 1px solid #000; 
+}
+
+.slidebar{
+  position: fixed;
+  top: 0;left: 0;
+  height: 77%;width: 85px;
+  margin-top: 10%;
+  display: flex;overflow: hidden;
+  flex-direction: column;
+  background: #161a2d;
+  padding: 25px 20 px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: all 0.4s ease;
+}
+
+*{
+  margin:0;
+  padding: 0;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover{
+  opacity: 0.7 ;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(28, 10, 83));
+  height: 20vh;
+  border-left: solid black 2px;
+  
+}
+
+main {
+  background: url("bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 92vh;
+}
+
+.nav-list{
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li{
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+
+
+
+.fundo{
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(28, 10, 83));
+    border: solid rgb(255, 0, 242) 5px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+   
+
+.texto{
+    font-size: 20px;
+    text-align: start;
+    color: white;
+    font-family: "computer";
+}
+
+body{
+    background-color: #000;
+}

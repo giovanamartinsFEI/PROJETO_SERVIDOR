@@ -1,0 +1,21 @@
+.posicionamento{
+    display: flex;
+    justify-content: space-around;
+}
+
+#posicionamento1{
+    background-color: rgb(159, 240, 195);
+  
+}
+#posicionamento2{
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    border: solid 2px black;
+}
+
+.voltar {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}

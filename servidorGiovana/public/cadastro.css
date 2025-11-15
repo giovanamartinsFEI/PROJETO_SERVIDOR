@@ -1,0 +1,35 @@
+body{
+   font-family: Arial, sans-serif; /* Fonte mais limpa */
+            background-color: #e0e0e0; /* Fundo cinza claro */
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            flex-direction: column; 
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+form{
+        display: grid;
+        
+        
+    }
+.form_geral{
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    grid-template-columns: auto auto;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+}
+.forms2{
+    text-align: center;
+    padding-left: 47px;
+}
+a:hover{
+    color: black;
+}

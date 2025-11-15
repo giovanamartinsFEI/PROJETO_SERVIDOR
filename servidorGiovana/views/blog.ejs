@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <style>
+    body {
+      background-color: #7c7c7c;
+      font-family: sans-serif;
+    }
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+h2{
+  color: #0056b3;
+}
+a:hover{
+    color: #0056b3;
+}
+    .criar {
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    .link-criar {
+      display: inline-block;
+      background-color: white;
+      color: #0056b3;
+      padding: 8px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .link-criar:hover {
+      background-color: rgb(78, 78, 78);
+      color: rgb(255, 255, 255);
+    }
+    .card {
+      width: 25%;
+      height: 45%;
+      background-color: white;
+      text-align: center;
+      border-radius: 20px;
+      padding: 10px;
+      margin: 20px auto;
+    }
+    .conteudo p {
+      text-decoration: underline;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="criar">
+    <a class="link-criar" href="/public/cadastrar_post.html">Criar novo post</a>
+  </div>
+
+  <% if (posts.length > 0) { %>
+    <% posts.forEach(post => { %>
+      <div class="card">
+        <div class="titulo">
+          <h2><%= post.titulo %></h2>
+        </div>
+        <div class="conteudo">
+          <p><strong>Resumo:</strong> <%= post.resumo %></p>
+          <p><strong>Conteúdo:</strong> <%= post.conteudo %></p>
+          <p><small><em>Criado em: <%= new Date(post.dataCriacao).toLocaleString() %></em></small></p>
+        </div>
+      </div>
+    <% }) %>
+  <% } else { %>
+    <p style="text-align:center; color:white;">Nenhum post encontrado.</p>
+  <% } %>
+
+  <p style="text-align:center;">
+    <a href="/">Projetos</a>
+  </p>
+</body>
+</html>

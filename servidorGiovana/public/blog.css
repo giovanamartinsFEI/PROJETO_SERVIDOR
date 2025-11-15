@@ -1,0 +1,91 @@
+/* --- Estilos Globais --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #7c7c7c; /* Um cinza claro para o fundo */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Altura total da tela */
+    margin: 0;
+}
+
+/* --- Container Principal (baseado no seu .login-page) --- */
+.login-page {
+    width: 100%;
+    max-width: 450px; /* Largura máxima do formulário */
+    padding: 20px;
+    box-sizing: border-box; /* Evita que o padding aumente a largura */
+}
+
+/* --- A Caixa do Formulário --- */
+.form {
+    background: #a0a0a0;
+    padding: 2.5rem; /* Espaçamento interno */
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* --- Cabeçalho "Cadastro de Posts" --- */
+.cabec h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #1c1e21; /* Cor escura para o título */
+}
+
+/* --- Estilo dos Parágrafos (que contêm os labels e inputs) --- */
+.form p {
+    margin-bottom: 1.2rem;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* --- Estilo dos Campos de Input --- */
+.form input[type="text"] {
+    width: 100%; /* Ocupa 100% da largura do container */
+    padding: 12px;
+    margin-top: 8px; /* Espaço entre o label (texto) e o input */
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box; /* Garante que o padding não quebre o layout */
+    font-size: 1rem;
+}
+
+/* --- Estilo do Botão "Cadastrar post" --- */
+.form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff; /* Azul primário */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s; /* Efeito suave no hover */
+}
+
+.form button:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
+}
+
+/* --- Link "Projetos" para Voltar --- */
+.voltar {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.link-projetos {
+    color: #e7e7e7;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.link-projetos:hover {
+    text-decoration: underline;
+    color: #0056b3;
+    
+}

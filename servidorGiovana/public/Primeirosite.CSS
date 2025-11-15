@@ -1,0 +1,30 @@
+p{
+    color: rgb(255, 255, 255);
+    font-size:18pt;
+}
+
+h1,h2{
+    background-image: url("IMAGENS/kvgzbtaePS.png");
+    font-size: 45pt;
+
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    font-size: 28pt;
+}
+body {
+    background-color: black;
+    text-align: center;
+background-image: url("IMAGENS/fundo\ lofi.gif") center;
+}
+.MARTINS{
+    background-color: rgb(255, 255, 255);
+}
+#Giovana{
+    background-color: rgb(255, 139, 211);
+}
+a:hover{
+    color: rgb(247, 250, 250);
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status da Aplicação</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background-color: #e0e0e0; }
+        .success { color: green; }
+        .failure { color: red; }
+        h1 { margin-bottom: 20px; }
+        a{color: black;}
+        a:hover{color: indigo;}
+    </style>
+</head>
+<body>
+    <h1 class="<%= status.includes('Sucesso') ? 'success' : 'failure' %>">
+        <%= status %>
+    </h1>
+    
+    <p><%= mensagem %></p>
+    
+    <hr>
+    
+    <p>
+        <a href="/public/Project.Html" style="text-decoration: none;">Projetos</a> |
+        <a href="/public/Project.Html" style="text-decoration: none;"> página de Login</a> |
+    </p>
+</body>
+</html>

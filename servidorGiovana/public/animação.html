@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="animação.css">
+</head>
+<body>
+    <div class="fundo">
+
+    <div class="centralizar">
+    <canvas id="animacao" width="300" height="300" style="border:1px solid black"></canvas>
+    </div>
+    </div>
+
+    <div class="voltar">
+        <h1><a href="./Project.Html">voltar</a></h1>
+    </div>
+<script>
+    const canvas = document.getElementById("animacao");
+const ctx = canvas.getContext("2d");
+
+let mouseX = canvas.width / 2;
+let mouseY = canvas.height / 2;
+
+const tamanho = 50; 
+
+canvas.addEventListener("mousemove", (e) => {
+    const rect = canvas.getBoundingClientRect();
+    
+    mouseX = e.clientX - rect.left;
+    mouseY = e.clientY - rect.top;
+
+    mouseX -= tamanho / 2.5;
+    mouseY -= tamanho / 2.5;
+    
+    mouseX = Math.max(0, Math.min(mouseX, canvas.width - tamanho));
+    mouseY = Math.max(0, Math.min(mouseY, canvas.height - tamanho));
+});
+
+canvas.addEventListener("mouseleave", () => {
+    mouseX = Math.max(0, Math.min(mouseX, canvas.width - tamanho));
+    mouseY = Math.max(0, Math.min(mouseY, canvas.height - tamanho));
+});
+
+function desenho() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+    ctx.beginPath();
+    ctx.rect(mouseX, mouseY, tamanho, tamanho);
+    ctx.fillStyle = "blue";
+    ctx.fill();
+    ctx.closePath();
+
+    requestAnimationFrame(desenho);
+}
+
+desenho();
+
+</script>
+</body>
+</html>
+
