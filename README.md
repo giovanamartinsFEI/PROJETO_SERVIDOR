@@ -32,3 +32,17 @@ Por ser o primeiro projeto da graduação, o foco principal foi a construção d
 O projeto foi construído utilizando o conjunto fundamental de tecnologias para a web:
 * HTML: Para a marcação e estruturação básica de todos os textos, imagens e seções das páginas.
 * CSS: Para a identidade visual, cores, tipografia e organização do design do site.
+* JavaScript: Para a implementação de comportamentos dinâmicos e interações na tela do usuário.
+* EJS (Embedded JavaScript): Mecanismo de renderização de modelos (template engine) utilizado para injetar dados do servidor diretamente no HTML de forma dinâmica.
+* Ambiente de Servidor: Tecnologia de backend responsável por rodar a aplicação, processar a lógica do blog e servir as páginas prontas estruturadas com o EJS.
+
+---
+
+## Como Executar o Projeto
+
+Como a aplicação depende de um servidor e de um mecanismo de visualização para funcionar corretamente:
+
+1. Baixe ou clone os arquivos deste repositório.
+2. Certifique-se de ter o ambiente de execução correspondente ao servidor instalado em sua máquina (bem como as dependências do projeto).
+3. Inicie o servidor local através do terminal na pasta do projeto.
+4. Abra o navegador e acesse o endereço local indicado (ex: `http://localhost:3000`) para interagir com o blog.
